@@ -1,0 +1,12 @@
+{
+  "title":"Error",
+  "type":"object",
+  "properties":{
+    "code":{
+      "type":"integer"
+    },
+    "description":{
+      "type":"string"
+    }
+  }
+}

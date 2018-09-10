@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="API Test">
+    <test name="Add product" >
+        <classes>
+            <class name="api.AddProductTest" />
+        </classes>
+    </test>
+    <test name="Get product">
+        <classes>
+            <class name="api.GetProductTest"/>
+        </classes>
+    </test>
+</suite>
