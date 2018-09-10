@@ -51,9 +51,6 @@ public class GetProductTest {
         Response response = request.post("http://localhost:8089/api/product/get/success");
 
         JsonPath jsonPath = response.jsonPath();
-//        В задании приведена невалидная схема для товара - проверка на схеме невозможна
-//        assertThat("Json schema is not as expected",
-//                response.body().asString(), matchesJsonSchemaInClasspath("productResponseSchema.json"));
         assertThat("Unexpected response code", jsonPath.get("id").equals(666));
         assertThat("Unexpected response name", jsonPath.get("name").equals("banana"));
         assertThat("Unexpected response price", jsonPath.get("price").equals(100));
